@@ -1,0 +1,56 @@
+.todo {
+  @apply p-5 rounded-2xl bg-white;
+}
+
+.todoHeader {
+  @apply flex justify-between items-center mb-1;
+}
+
+.priority {
+  @apply text-xs font-medium capitalize;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.low {
+  @apply bg-yellow-light bg-opacity-20 text-yellow;
+}
+
+.high {
+  @apply bg-red bg-opacity-10 text-red;
+}
+
+.completed {
+  @apply bg-green-light bg-opacity-20 text-green;
+}
+
+.todoInfo {
+  @apply flex flex-col mb-7;
+  gap: 6px;
+}
+
+.todoName {
+  @apply text-lg font-semibold text-black;
+}
+
+.todoDescription {
+  @apply text-xs font-normal text-grey;
+}
+
+.images {
+  @apply grid grid-flow-col auto-cols-fr;
+}
+
+.footer {
+  @apply flex justify-between items-center;
+}
+
+.tagsContainer {
+  @apply flex items-center;
+  gap: 14px;
+}
+
+.tag {
+  @apply flex items-center text-xs font-medium text-grey;
+  gap: 5px;
+}

@@ -1,0 +1,35 @@
+.todosContainer {
+  @apply relative bg-dusky-white rounded-2xl p-5 flex flex-col gap-5;
+}
+
+.droppableArea {
+  @apply flex flex-col gap-5;
+}
+
+.todoHeader {
+  @apply flex items-center gap-2 text-base font-medium text-black mb-2;
+  padding-bottom: 22px;
+  border-bottom: 3px solid transparent;
+}
+
+.addTodoButton {
+  @apply absolute;
+  top: 22px;
+  right: 22px;
+}
+
+.notStarted {
+  border-bottom: 3px solid #5030e5;
+}
+
+.started {
+  border-bottom: 3px solid #ffa500;
+}
+
+.completed {
+  border-bottom: 3px solid #8bc48a;
+}
+
+.count {
+  @apply w-5 h-5 rounded-full bg-grey-light flex justify-center items-center text-xs font-medium text-dusky-black mx-1;
+}
