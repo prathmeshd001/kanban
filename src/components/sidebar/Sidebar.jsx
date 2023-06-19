@@ -143,7 +143,7 @@ function Sidebar({
                                     <ListItem key={text}>
                                         <ListItemButton
                                             onClick={() => {
-                                                navigate(`/${lowerCaseText}`);
+                                                navigate(`/`);
                                                 setActive(lowerCaseText);
                                             }}
                                             sx={{
@@ -200,7 +200,7 @@ function Sidebar({
                                     <ListItem key={text}>
                                         <ListItemButton
                                             onClick={() => {
-                                                navigate(`/${lowerCaseText}`);
+                                                navigate(`/`);
                                                 setActive(lowerCaseText);
                                             }}
                                             sx={{
