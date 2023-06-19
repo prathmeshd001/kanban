@@ -139,15 +139,15 @@ const Kanban = () => {
         //ADD ITEM
         if (destination.droppableId == 1) {
             setToDo((old) => {
-                return [...old, { ...task, stateId: destination.droppableId }];
+                return [{ ...task, stateId: destination.droppableId }, ...old];
             });
         } else if (destination.droppableId == 2) {
             setOnProgress((old) => {
-                return [...old, { ...task, stateId: destination.droppableId }];
+                return [{ ...task, stateId: destination.droppableId }, ...old];
             });
         } else {
             setDone((old) => {
-                return [...old, { ...task, stateId: destination.droppableId }];
+                return [{ ...task, stateId: destination.droppableId }, ...old];
             });
         }
     };
